@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #FAF3F3;
+            color: #333;
+        }
+
+        header {
+            padding: 15px;
+            background-color: #FAD4D4;
+            border-radius: 10px;
+            margin: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: #E2979C;
+            margin-left: 20px;
+        }
+
+        a {
+            color: #E2979C;
+            text-decoration: underline;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+            margin-right: 20px;
+        }
+
+        a:hover {
+            color: #a8dadc;
+        }
+
+        .lists {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            padding: 15px;
+            margin: 15px;
+            background-color: #FFE8E8;
+            border-radius: 10px;
+        }
+
+        .music {
+            background: linear-gradient(145deg, #FAD4D4, #FFE8E8);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .music:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .music img {
+            width: 100%;
+            height: 120px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .music h2 {
+            font-size: 1.1em;
+            color: #E2979C;
+            margin: 8px 0;
+        }
+
+        .music p.sub-music {
+            font-size: 0.9em;
+            color: #555;
+            margin: 4px 0;
+        }
+
+        .music button {
+            background-color: #E2979C;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .music button:hover {
+            background-color: #FAD4D4;
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #FAD4D4;
+            border-radius: 10px;
+            margin: 15px;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #E2979C;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ryza's Playlists: Tracks You Gotta Hear</h1>
+        <a href="index.html">Go Back</a>
+    </header>
+
+    <main class="lists">
+        <section class="music">
+            <img src="https://i.ibb.co/B4KDMPr/1975.png" usemap="#1975" />
+            <map name="1975">
+                <area shape="rect" coords="2,1,1363,763" href="Fallingforyou-The1975.html" title="Fallingforyou-The1975" alt="Fallingforyou-The1975">
+            </map>
+            <h2>Fallingforyou</h2>
+            <p class="sub-music">The 1975</p>
+            <button onclick="location.href='Music\The1975.html'">More...</button>
+        </section>
+        
+        <section class="music">
+            <img src="https://i.ibb.co/r4jyLvN/adie.png" usemap="#Adie" />
+            <map name="Adie">
+                <area shape="rect" coords="7,5,1361,763" href="G.K.Y.A.M.-Adie.html" title="G.K.Y.A.M.-Adie" alt="G.K.Y.A.M.-Adie">
+            </map>
+            <h2>G.K.Y.A.M.</h2>
+            <p class="sub-music">Adie</p>
+            <button onclick="location.href='Music\Adie.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/vqqLqjr/aphrodite.png" usemap="#Ridleys" />
+            <map name="Ridleys">
+                <area shape="rect" coords="9,5,1359,763" href="Aphrodite-TheRidleys.html" title="Aphrodite-TheRidleys alt="Aphrodite-TheRidleys">
+            </map>
+            <h2>Aphrodite</h2>
+            <p class="sub-music">The Ridleys</p>
+            <button onclick="location.href='TheRidleys.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/h1mGyqL/arthur.png" usemap="#Arthur" />
+            <map name="Arthur">
+                <area shape="rect" coords="5,5,1359,761" href="LifePuzzle-ArthurNery.html" title="LifePuzzle-ArthurNery" alt="LifePuzzle-ArthurNery">
+            </map>
+            <h2>Life Puzzle</h2>
+            <p class="sub-music">Arthur Nery</p>
+            <button onclick="location.href='ArthurNery.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/9bydnrZ/bruno.png" usemap="#Bruno" />
+            <map name="Bruno">
+                <area shape="rect" coords="4,5,1361,761" href="Nothing-BrunoMajor.html" title="Nothing-BrunoMajor" alt="Nothing-BrunoMajor">
+            </map>
+            <h2>Nothing</h2>
+            <p class="sub-music">Bruno Major</p>
+            <button onclick="location.href='BrunoMajor.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/vHjZ88H/earl.png" usemap="#Earl" />
+            <map name="Earl"> 
+                <area shape="rect" coords="4,4,1361,761" href="Dalangin-EarlAgustin.html" title="Dalangin-EarlAgustin" alt="Dalangin-EarlAgustin">
+            </map>
+            <h2>Dalangin</h2>
+            <p class="sub-music">Earl Agustin</p>
+            <button onclick="location.href='EarlAgustin.html'">More...</button>
+        </section>
+
+        <section class="music">
+        <img src="https://i.ibb.co/NyVvkwJ/keshi.png" usemap="#Keshi" />
+            <map name="Keshi">
+                <area shape="rect" coords="5,5,1357,757" href="SoftSpot-Keshi.html" title="softSpot-Keshi" alt="softSpot-Keshi">
+            </map>
+            <h2>Soft Spot</h2>
+            <p class="sub-music">Keshi</p>
+            <button onclick="location.href='Keshi.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/1vrp29W/maki.png" usemap="#Maki" />
+            <map name="Maki">
+                <area shape="rect" coords="4,5,1361,761" href="Kailan-Maki.html" title="Kailan-Maki" alt="Kailan-Maki">
+            </map>
+            <h2>Kailan</h2>
+            <p class="sub-music">Maki</p>
+            <button onclick="location.href='Maki.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/8xbK6T7/niki.png" usemap="#NIKI" />
+            <map name="NIKI">
+                <area shape="rect" coords="5,7,1359,759" href="Backburner-NIKI.html" title="Backburner-NIKI" alt="Backburner-NIKI">
+            </map>
+            <h2>Backburner</h2>
+            <p class="sub-music">NIKI</p>
+            <button onclick="location.href='NIKI.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/Br0nqwy/over-oct.png" usemap="#OO" />
+            <map name="OO">
+                <area shape="rect" coords="6,5,1355,757" href="Ikot-OverOctober.html" title="Ikot-OverOctober" alt="Ikot-OverOctober">
+            </map>
+            <h2>Ikot</h2>
+            <p class="sub-music">Over October</p>
+            <button onclick="location.href='OverOctober.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/g7NV9Jh/shirebound.png" usemap="#SB" />
+            <map name="SB">
+                <area shape="rect" coords="8,8,1355,1357" href="WaltzofFourLeftFeet-Shirebound&Busking.html" title="WaltzofFourLeftFeet-ShireboundAndBusking" alt="WaltzofFourLeftFeet-ShireboundAndBusking">
+            </map>
+            <h2>Waltz of Four Left Feet</h2>
+            <p class="sub-music">Shirebound & Busking</p>
+            <button onclick="location.href='ShireboundBusking.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/8N2j29J/coj.png" usemap="#COJ" />
+            <map name="COJ">
+                <area shape="rect" coords="9,9,1361,761" href="Sagada-CupofJoe.html" title="Sagada-CupofJoe" alt="Sagada-CupofJoe">
+            </map>
+            <h2>Sagada</h2>
+            <p class="sub-music">Cup of Joe</p>
+            <button onclick="location.href='CupofJoe.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/CVMpvJw/syd-hartha.png" usemap="#Syd" />
+            <map name="Syd">
+                <area shape="rect" coords="6,4,1359,757" href="tilatala-SydHartha.html" title="tilatala-SydHartha" alt="tilatala-SydHartha">
+            </map>
+            <h2>tila tala</h2>
+            <p class="sub-music">Syd Hartha</p>
+            <button onclick="location.href='SydHartha.html'">More...</button>
+        </section>
+
+        <section class="music">
+            <img src="https://i.ibb.co/k19V7Wc/w2w.png" usemap="#W2W">
+            <map name="W2W">
+                <area shape="rect" coords="6,7,1353,759" href="annie.-WavetoEarth.html"  title="annie.-WavetoEarth" alt="annie.-WavetoEarth">
+            </map>
+            <h2>annie.</h2>
+            <p class="sub-music">wave to earth</p>
+            <button onclick="location.href='wavetoearth.html'">More...</button>
+        </section>
+    </main>
+        <footer>
+            <p>Images provided by Spotify and Pinterest.</p>
+        </footer>
+</body>
+</html>
+

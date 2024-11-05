@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #FAF3F3;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            padding-top: 50px;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #FAD4D4;
+            border-radius: 10px;
+            margin: 20px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #E2979C;
+            margin-left: 20px; 
+        }
+
+        a {
+            color: #E2979C;
+            text-decoration: underline;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+            margin-right: 20px;
+        }
+
+        a:hover {
+            color: #a8dadc;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .cooking {
+            background: linear-gradient(145deg, #FAD4D4, #FFE8E8);
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 600px;
+            width: 100%;
+            margin-top: 100px;
+        }
+
+        .cooking:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .cooking img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .cooking h2 {
+            font-size: 1.5em;
+            color: #E2979C;
+            margin: 10px 0;
+        }
+
+        .cooking p.description {
+            font-size: 1em;
+            color: #555;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cooking</h1>
+        <a href="index.html">Go Back</a>
+    </header>
+    <main>
+        <section class="cooking">
+            <h2>My Interest: Cooking The Way to My Desire</h2>
+            <hr>
+            <p class="description">For me, cooking is not only a hobby but a passion that fills free time with creativity and enjoyment. I love trying out new recipes, discovering unusual flavors, and sharing with others my culinary creations. This website is devoted to the sharing of my love for cooking, recipes, tips, and inspiration to all who want to delve into the world of possibilities. Whether an experienced cook or just starting out, I hope my website inspires you to make great meals and enjoy the experience.</p>
+            <br>
+            <img src="https://i.ibb.co/yFwbP0C/Foods.png" usemap="#foods"> 
+                <map name="foods">
+                    <area shape="rect" coords="1,0,117,1598" href="ChickenWingsRecipe.html" title="Chicken Wings Recipe" alt="Chicken Wings Recipe">
+                    <area shape="rect" coords="276,4,392,1598" href="SizzlingSisigRecipe.html" title="Sizzling Sisig Recipe" alt="Sizzling Sisig Recipe">
+                    <area shape="rect" coords="130,10,255,1598" href="ButteredShrimpRecipe.html" title="Buttered Shrimp Recipe" alt="Buttered Shrimp Recipe">
+                    <area shape="rect" coords="422,4,561,1598" href="PutoBumbongRecipe.html" title="Puto Bumbong Recipe" alt="Puto Bumbong Recipe">
+                </map>
+            <p>Click on a food item of your choice for more info...</p>
+        </section>
+    </main>
+</body>
+</html>
